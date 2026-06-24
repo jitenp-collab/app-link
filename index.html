@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Open App</title>
+  </head>
+  <body>
+    <script>
+      const deepLink = 'myapp://open';
+      const fallback = 'https://www.google.com';
+
+      window.location.href = deepLink;
+
+      setTimeout(() => {
+        window.location.href = fallback;
+      }, 2000);
+    </script>
+  </body>
+</html>
